@@ -22,5 +22,43 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/host-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/host-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/customer-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/customer-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/orders-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/orders-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/products-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/products-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/hr-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/hr-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/marketing-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/marketing-app/tsconfig.spec.json"
+    }
+  ]
 }
