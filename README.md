@@ -230,7 +230,7 @@ Then add the Bootstrap reference in **angular.json** of `container-mfe` in each 
     ]
   }
 }
-
+```
     (Similar for orders, hr, marketing, products)
 ---
 
