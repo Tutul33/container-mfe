@@ -201,9 +201,9 @@ export class CustomerRoutingModule {}
 
 npm install bootstrap@latest
 
-Then add the bootstrap reference to each app generated in angular.json of container-mfe. For example:
+Then add the bootstrap reference in angular.json of container-mfe in individual project references. For example:
     For host-app :
-        "esbuild": {
+       ```"esbuild": {
 					"builder": "@angular/build:application",
 					"options": {
 						"browser": "projects/host-app/src/main.ts",
@@ -226,6 +226,7 @@ Then add the bootstrap reference to each app generated in angular.json of contai
 							"es-module-shims"
 						]
 					}
+        ```
     (Similar for orders, hr, marketing, products)
 ---
 
