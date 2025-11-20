@@ -201,32 +201,36 @@ export class CustomerRoutingModule {}
 
 npm install bootstrap@latest
 
-Then add the bootstrap reference in angular.json of container-mfe in individual project references. For example:
-    For host-app :
-       ```"esbuild": {
-					"builder": "@angular/build:application",
-					"options": {
-						"browser": "projects/host-app/src/main.ts",
-						"tsConfig": "projects/host-app/tsconfig.app.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							{
-								"glob": "**/*",
-								"input": "projects/host-app/public"
-							}
-						],
-						"styles": [
-							"projects/host-app/src/styles.scss",
-							"node_modules/bootstrap/dist/css/bootstrap.min.css"
-						],
-						"scripts":[
-							"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-						],
-						"polyfills": [
-							"es-module-shims"
-						]
-					}
-        ```
+
+Then add the Bootstrap reference in **angular.json** of `container-mfe` in each project.  
+**Example for host-app:**
+
+```json
+"esbuild": {
+  "builder": "@angular/build:application",
+  "options": {
+    "browser": "projects/host-app/src/main.ts",
+    "tsConfig": "projects/host-app/tsconfig.app.json",
+    "inlineStyleLanguage": "scss",
+    "assets": [
+      {
+        "glob": "**/*",
+        "input": "projects/host-app/public"
+      }
+    ],
+    "styles": [
+      "projects/host-app/src/styles.scss",
+      "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
+    "scripts": [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ],
+    "polyfills": [
+      "es-module-shims"
+    ]
+  }
+}
+
     (Similar for orders, hr, marketing, products)
 ---
 
