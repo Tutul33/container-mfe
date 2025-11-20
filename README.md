@@ -235,8 +235,6 @@ export const routes: Routes = [
 
 ```
 
-(Similar for orders, hr, marketing, products)
-
 ---
 
 # ▶ Bootstrap implement the Apps  
