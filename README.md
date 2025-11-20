@@ -227,15 +227,3 @@ A fully functional **Angular 20 Micro-Frontend Architecture** using **Native Fed
 
 ---
 
-# 📬 Contribution  
-Feel free to fork and extend with:
-
-- Shared libraries  
-- Authentication (Keycloak/JWT)  
-- Versioned deployments  
-- Runtime federation manifests  
-
----
-
-# ❤️ Support  
-If you want diagrams, Docker setup, CI/CD, or a GitHub-ready version, just ask!
