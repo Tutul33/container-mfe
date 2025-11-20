@@ -197,6 +197,38 @@ export class CustomerRoutingModule {}
 
 ---
 
+# ▶ Bootstrap implement the Apps  
+
+npm install bootstrap@latest
+
+Then add the bootstrap reference to each app generated in angular.json of container-mfe. For example:
+    For host-app :
+        "esbuild": {
+					"builder": "@angular/build:application",
+					"options": {
+						"browser": "projects/host-app/src/main.ts",
+						"tsConfig": "projects/host-app/tsconfig.app.json",
+						"inlineStyleLanguage": "scss",
+						"assets": [
+							{
+								"glob": "**/*",
+								"input": "projects/host-app/public"
+							}
+						],
+						"styles": [
+							"projects/host-app/src/styles.scss",
+							"node_modules/bootstrap/dist/css/bootstrap.min.css"
+						],
+						"scripts":[
+							"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+						],
+						"polyfills": [
+							"es-module-shims"
+						]
+					}
+    (Similar for orders, hr, marketing, products)
+---
+
 # ▶ Running the Apps  
 In separate terminals:
 
